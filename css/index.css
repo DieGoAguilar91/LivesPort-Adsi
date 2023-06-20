@@ -1,0 +1,214 @@
+
+.container{
+    justify-content: center;
+    box-sizing: 0;
+    background-color: #d5e0d1;
+    height: 1270px;
+    gap: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* Primera Columna */
+.caja{
+    margin-top: 10px;
+    width: 250px;
+}
+.caja .cajaa{
+    width: 100%;
+background-color: rgb(250, 246, 246);
+    border-radius: 20px;
+    padding: 5px;
+}
+.registrar{
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+}
+  
+.registrar .botons {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #1f53c5;
+    background: #1f53c5;
+    border-radius: 20px;
+}
+.registrar .botons2 {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #1f53c5;
+    border-radius: 20px;
+ 
+}
+.otrossitios{
+    height: 300px;
+   
+  display: grid;
+}
+.masdeportes{
+    height: 300px; 
+  display: grid;
+}
+.redes{
+    height: 185px; 
+    display: grid;  
+}
+.redes div{
+   gap: 10px;
+    display: grid;
+    text-align: center;
+}
+.redes a{
+    color: black;
+    text-decoration: none;
+}
+/* Segunda Columna */
+.cajb{
+    width: 550px;
+    padding: 10px;
+}
+.cajba{
+    width: 100%;
+    background-color: rgb(250, 246, 246);
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.noticia1{
+    height: 420px;
+}
+.noticia2{
+    height: 400px;
+}
+.noticia3{
+    padding-top: 10px; 
+    height: 310px;
+}
+.noticia1 .text, .noticia2 .text, .noticia3 .text{
+   justify-content: center;
+    display: flex;
+    font-size: 20px;
+    gap: 20px;
+    height: 80px;
+}
+.noticia1 .text b, .noticia2 .text b, .noticia3 .text b{
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    gap: 20px;
+    height: 80px;
+}
+
+.noticia1 .imagen img, .noticia2 .imagen img, .noticia3 .imagen img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.noticia1 h3, .noticia2 h3, .noticia3 h3 {
+    height: 20px;
+    text-align: center;
+}
+
+.barraopt{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.barraopt div{
+    background-color: rgb(250, 246, 246);
+    width: 30%;
+    border: 1px solid rgb(31, 107, 207);
+    border-radius: 20px;
+    display: flex;
+   text-align: center;
+   justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.cajc{
+    margin-top: 10px;
+    margin-bottom:30px;
+    background-color: rgb(250, 246, 246);
+  border-radius: 20px;
+    width: 250px;
+    padding: 10px;
+    gap:10px;
+}
+
+.cajc img{
+    width: 100%;
+    border-radius: 20px;
+}
+.cajc .noti img{
+    width: 100%;
+    border-radius: 0;
+   
+}
+.cajc .noti p{
+    gap: 0;
+    font-size: 14px;
+}
+
+@media (max-width:1170px){
+    .container{
+        height: 1700px;
+    }
+    .caja{
+        width: 30%;
+    }
+    .cajb{
+        width: auto;
+    }
+    .cajc{display: flex;
+        width: 100%;
+    }
+    .cajc div img{
+        width: 220px;
+    }
+}
+@media (max-width:1100px){
+    .container{
+        height: 2000px;  
+    }
+    .caja{
+       display: flex;
+       width: 100%;
+       gap: 10px;
+    }
+    .cajaa{
+        height: 300px;
+    }
+  
+    .cajc{
+        display: flex;
+        width: 900%;
+    }
+    .cajc div img{
+        width: 220px;
+    }
+}
+
+@media (max-width:800px){
+    .container{
+        height: 4600px;  
+    }
+    .caja{
+       display: grid;
+       width: 100%;
+       gap: 10px;
+       justify-content: center;
+       grid-template-columns: auto auto auto auto;
+    }
+    .cajaa{
+        height: 300px;
+    }
+  
+    .cajc{
+        display: grid;
+        width: 100%;
+    }
+    .cajc div img{
+      width: 100%;
+    }
+}

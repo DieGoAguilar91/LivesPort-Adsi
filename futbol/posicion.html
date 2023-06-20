@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>LivesPort</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="futbolcss/posicion.css">
+    <link rel="icon" href="../img/ico.ico">
+    <!--Iconos-->
+	<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <section class="title">
+        <img src="../img/logo.png" width="140px" height="140px" alt="">
+		<h1><b>LivesPort.com</b> </h1>
+	</section>
+    <div class="menuone">
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='#'>Favoritos</a></li>
+                <li><a href='#'>Top Scores</a></li>
+
+                <li><a class='dropdown-arrow' href='../index.html'> Futbol</a>
+                    <ul class='sub-menus'>
+                        <li><a href='resultados.html'>Resultados</a></li>
+                        <li><a href='calendario.html'>Calendario</a></li>
+                        <li><a href='equipos.html'>Equipos</a></li>
+                        <li><a href='posicion.html'>Posiciones</a></li>
+                        <li><a href='#'>Todos los torneos</a></li>
+                        <li><a href='#'>ESPNFantasy Fútbol</a></li>
+                    </ul>
+                </li>
+
+                <li><a class='dropdown-arrow' href='#'>Ciclismo</a>
+                <ul class='sub-menus'>
+                    <li><a href='#'>Calendario WorldTour 2023</a></li>
+                    <li><a href='#'>Giro de Italia 2023</a></li>
+                    <li><a href='#'>Etapas</a></li>
+                    <li><a href='#'>Participantes</a></li>
+                    <li><a href='#'>Clasificaciones</a></li>
+                </ul>
+
+                <li><a class='dropdown-arrow' href='#'>F1</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>F-1: Posiciones</a></li>
+                        <li><a href='#'>F1: Calendario</a></li>
+                        <li><a href='#'>F-1: Pilotos</a></li>
+                    </ul>
+                </li>
+
+                <li><a class='dropdown-arrow' href='#'>Basquetbol</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>Resultados</a></li>
+                        <li><a href='#'>Calendario</a></li>
+                        <li><a href='#'>Posiciones</a></li>
+                        <li><a href='#'>Estadisticas</a></li>
+                        <li><a href='#'>Equipos</a></li>
+                        <li><a href='#'>Power Index</a></li>
+                        <li><a href='#'>Jugadores</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow' href='#'>Golf</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>Resultados</a></li>
+                        <li><a href='#'>Calendario</a></li>
+                        <li><a href='#'>Rankings</a></li>
+                        <li><a href='#'>Estadisticas</a></li>
+                        <li><a href='#'>Posiciones</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow' href='#'>Tenis</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>Resultados</a></li>
+                        <li><a href='#'>Calendario</a></li>
+                        <li><a href='#'>Rankings</a></li>
+                        <li><a href='#'>Estadisticas</a></li>
+                        <li><a href='#'>Jugadores</a></li>
+                        <li><a href='#'> Ganadores de Grand Slam</a></li>
+                    </ul>
+                </li>  
+                <li><a class='dropdown-arrow' href='#'>Mas Deportes</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>F. Americano</a></li>
+                        <li><a href='#'>Boxeo</a></li>
+                        <li><a href='#'>MMA</a></li>
+                        <li><a href='#'>Hokey</a></li>
+                        <li><a href='#'>Polo</a></li>
+                        <li><a href='#'>Deporte Motor</a></li>
+                    </ul>
+                </li>   
+            </ul>
+        </nav>
+    </div>
+
+    <div class="menutwo">
+        <nav id='menu'>
+
+                <li><a href='../index.html'><img src="../img/iconmenu/futbol.png" width="20x"  height="20px" alt=""> Futbol</a></li>
+                <li><a class='dropdown-arrow' href='#'>Ligas</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>Liga BetPlay</a></li>
+                        <li><a href='#'>Colombia Primera A</a></li>
+                        <li><a href='#'>CONMEBOL Sudamericana</a></li>
+                        <li><a href='#'>UEFA Eoropa League</a></li>
+                        <li><a href='#'>UEFA Champions League</a></li>
+                        <li><a href='#'>Copa America</a></li>
+                    </ul>
+                </li>  
+                <li><a href='resultados.html'>Resultados</a></li>
+                <li><a href='calendario.html'>Calendario</a></li>
+                <li><a href='equipos.html'>Equipos</a></li>
+                <li><a href='posicion.html'>Posiciones</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="boxcontainer">   
+            <h1>Posiciones de la Columbian Primera A 2023</h1>
+            <div class="inputs">
+                <div>
+                    <select>
+                        <option value="">Columbian Primera A</option>
+                        <option value="">Liga BetPlay</option>
+                        <option value="">CONMEBOL Sudamericana</option>
+                        <option value="">UEFA Eoropa League</option>
+                        <option value="">UEFA Champions League</option>
+                        <option value="">Copa America</option>
+                    </select>
+                </div>
+               <div>
+                    <select>
+                        <option value="">2023</option>
+                        <option value="">2022</option>
+                        <option value="">2021</option>
+                        <option value="">2020</option>
+                        <option value="">2019</option>
+                        <option value="">2018</option>
+                        <option value="">2017</option>
+                        <option value="">2016</option>
+                        <option value="">2015</option>
+                        <option value="">2014</option>
+                        <option value="">2013</option>
+                        <option value="">2012</option>
+                        <option value="">2011</option>
+                        <option value="">2010</option>
+                    </select>
+               </div>
+               <div>
+                    <select>
+                        <option value="">Apertura</option>
+                        <option value="">Semifinales</option>
+                        <option value="">Clausura</option>
+                        <option value="">Playoffs-Semifinals</option>
+                        
+                    </select>
+               </div>
+            </div>  
+            <h3>Columbian Primera A</h3>
+            <div class="tabla">
+                <!-- Fila 1 -->
+                <div class="registro grupo">
+                    <h4><b><u>APERTURA</u></b></h4>
+                </div>
+                <div class="registro">
+                    <h4><b><u>J</u></b></h4>
+                </div>
+                <div class="registro">
+                    <h4><b><u>G</u></b></h4>
+                </div>
+                <div class="registro">
+                    <h4><b><u>E</u></b></h4>
+                </div>
+                <div class="registro">
+                    <h4><b><u>P</u></b></h4>
+                </div>
+                <div class="registro">
+                    <h4><b><u>GF</u></b></h4>
+                </div>
+                <div class="registro">
+                    <h4><b><u>GC</u></b></h4>
+                </div>
+                <div class="registro">
+                    <h4><b><u>DIF</u></b></h4>
+                </div>
+                <div class="registro">
+                    <h4><b><u>PTS</u></b></h4>
+                </div>
+                <!-- Fila 2 -->
+                <div class="registro grupo">
+                    <h4>1</h4>
+                    <div>
+                        <img src="../img/escudosequipos/rionegroaguilas.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Rionegro Águilas</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>11</h4>
+                </div>
+                <div class="registro">
+                    <h4>6</h4>
+                </div>
+                <div class="registro">
+                    <h4>3</h4>
+                </div>
+                <div class="registro">
+                    <h4>32</h4>
+                </div>
+                <div class="registro">
+                    <h4>21</h4>
+                </div>
+                <div class="registro positivo">
+                    <h4>+11</h4>
+                </div>
+                <div class="registro">
+                    <h4>39</h4>
+                </div>
+                <!-- Fila 3 -->
+                <div class="registro grupo">
+                    <h4>2</h4>
+                    <div>
+                        <img src="../img/escudosequipos/millonarios.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Millonarios</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>10</h4>
+                </div>
+                <div class="registro">
+                    <h4>8</h4>
+                </div>
+                <div class="registro">
+                    <h4>2</h4>
+                </div>
+                <div class="registro">
+                    <h4>30</h4>
+                </div>
+                <div class="registro">
+                    <h4>18</h4>
+                </div>
+                <div class="registro positivo">
+                    <h4>+12</h4>
+                </div>
+                <div class="registro">
+                    <h4>38</h4>
+                </div>
+                <!-- Fila 4 -->
+                <div class="registro grupo">
+                    <h4>3</h4>
+                    <div>
+                        <img src="../img/escudosequipos/atleticonacional.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Átletico Nacional</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>9</h4>
+                </div>
+                <div class="registro">
+                    <h4>8</h4>
+                </div>
+                <div class="registro">
+                    <h4>3</h4>
+                </div>
+                <div class="registro">
+                    <h4>26</h4>
+                </div>
+                <div class="registro">
+                    <h4>14</h4>
+                </div>
+                <div class="registro positivo">
+                    <h4>+12</h4>
+                </div>
+                <div class="registro">
+                    <h4>35</h4>
+                </div>
+                <!-- Fila 5 -->
+                <div class="registro grupo">
+                    <h4>4</h4>
+                    <div>
+                        <img src="../img/escudosequipos/americadecali.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>América de Cali </h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>9</h4>
+                </div>
+                <div class="registro">
+                    <h4>5</h4>
+                </div>
+                <div class="registro">
+                    <h4>6</h4>
+                </div>
+                <div class="registro">
+                    <h4>32</h4>
+                </div>
+                <div class="registro">
+                    <h4>23</h4>
+                </div>
+                <div class="registro positivo">
+                    <h4>+9</h4>
+                </div>
+                <div class="registro">
+                    <h4>32</h4>
+                </div>
+                <!-- Fila 6 -->
+                <div class="registro grupo">
+                    <h4>5</h4>
+                    <div>
+                        <img src="../img/escudosequipos/boyacachico.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Boyacá Chicó</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>7</h4>
+                </div>
+                <div class="registro">
+                    <h4>9</h4>
+                </div>
+                <div class="registro">
+                    <h4>4</h4>
+                </div>
+                <div class="registro">
+                    <h4>24</h4>
+                </div>
+                <div class="registro">
+                    <h4>18</h4>
+                </div>
+                <div class="registro positivo">
+                    <h4>+6</h4>
+                </div>
+                <div class="registro">
+                    <h4>30</h4>
+                </div>
+                <!-- Fila 7 -->
+                <div class="registro grupo">
+                    <h4>6</h4>
+                    <div>
+                        <img src="../img/escudosequipos/alianzapetrolera.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Alianza Petrolera </h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>9</h4>
+                </div>
+                <div class="registro">
+                    <h4>3</h4>
+                </div>
+                <div class="registro">
+                    <h4>8</h4>
+                </div>
+                <div class="registro">
+                    <h4>27</h4>
+                </div>
+                <div class="registro">
+                    <h4>22</h4>
+                </div>
+                <div class="registro positivo">
+                    <h4>+5</h4>
+                </div>
+                <div class="registro">
+                    <h4>30</h4>
+                </div>
+                <!-- Fila 8 -->
+                <div class="registro grupo">
+                    <h4>7</h4>
+                    <div>
+                        <img src="../img/escudosequipos/independientemedillin.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Independiente Medellin</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>7</h4>
+                </div>
+                <div class="registro">
+                    <h4>9</h4>
+                </div>
+                <div class="registro">
+                    <h4>4</h4>
+                </div>
+                <div class="registro">
+                    <h4>24</h4>
+                </div>
+                <div class="registro">
+                    <h4>18</h4>
+                </div>
+                <div class="registro positivo">
+                    <h4>+6</h4>
+                </div>
+                <div class="registro">
+                    <h4>29</h4>
+                </div>
+                <!-- Fila 9 -->
+                <div class="registro grupo">
+                    <h4>8</h4>
+                    <div>
+                        <img src="../img/escudosequipos/deportivopasto.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Deportivo Pasto</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>9</h4>
+                </div>
+                <div class="registro">
+                    <h4>3</h4>
+                </div>
+                <div class="registro">
+                    <h4>8</h4>
+                </div>
+                <div class="registro">
+                    <h4>27</h4>
+                </div>
+                <div class="registro">
+                    <h4>22</h4>
+                </div>
+                <div class="registro positivo">
+                    <h4>+5</h4>
+                </div>
+                <div class="registro">
+                    <h4>29</h4>
+                </div>
+                <!-- Fila 10 -->
+                <div class="registro grupo">
+                    <h4>9</h4>
+                    <div>
+                        <img src="../img/escudosequipos/atleticojunior.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Atletico Junior</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>7</h4>
+                </div>
+                <div class="registro">
+                    <h4>7</h4>
+                </div>
+                <div class="registro">
+                    <h4>6</h4>
+                </div>
+                <div class="registro">
+                    <h4>17</h4>
+                </div>
+                <div class="registro">
+                    <h4>17</h4>
+                </div>
+                <div class="registro negativo">
+                    <h4>0</h4>
+                </div>
+                <div class="registro">
+                    <h4>28</h4>
+                </div>
+                <!-- Fila 11 -->
+                <div class="registro grupo">
+                    <h4>10</h4>
+                    <div>
+                        <img src="../img/escudosequipos/independientesantafe.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Independiente Santa Fe</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>7</h4>
+                </div>
+                <div class="registro">
+                    <h4>7</h4>
+                </div>
+                <div class="registro">
+                    <h4>6</h4>
+                </div>
+                <div class="registro">
+                    <h4>17</h4>
+                </div>
+                <div class="registro">
+                    <h4>17</h4>
+                </div>
+                <div class="registro positivo">
+                    <h4>+4</h4>
+                </div>
+                <div class="registro">
+                    <h4>26</h4>
+                </div>
+                <!-- Fila 12 -->
+                <div class="registro grupo">
+                    <h4>11</h4>
+                    <div>
+                        <img src="../img/escudosequipos/laequidad.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>La Equidad</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>5</h4>
+                </div>
+                <div class="registro">
+                    <h4>11</h4>
+                </div>
+                <div class="registro">
+                    <h4>4</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>17</h4>
+                </div>
+                <div class="registro positivo">
+                    <h4>+3</h4>
+                </div>
+                <div class="registro">
+                    <h4>26</h4>
+                </div>
+                <!-- Fila 13 -->
+                <div class="registro grupo">
+                    <h4>12</h4>
+                    <div>
+                        <img src="../img/escudosequipos/deportivopereira.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Deportivo Pereira</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>6</h4>
+                </div>
+                <div class="registro">
+                    <h4>7</h4>
+                </div>
+                <div class="registro">
+                    <h4>7</h4>
+                </div>
+                <div class="registro">
+                    <h4>24</h4>
+                </div>
+                <div class="registro">
+                    <h4>25</h4>
+                </div>
+                <div class="registro negativo">
+                    <h4>-1</h4>
+                </div>
+                <div class="registro">
+                    <h4>25</h4>
+                </div>
+                <!-- Fila 14-->
+                <div class="registro grupo">
+                    <h4>13</h4>
+                    <div>
+                        <img src="../img/escudosequipos/deportestolima.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Deportes Tolima</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>5</h4>
+                </div>
+                <div class="registro">
+                    <h4>9</h4>
+                </div>
+                <div class="registro">
+                    <h4>6</h4>
+                </div>
+                <div class="registro">
+                    <h4>23</h4>
+                </div>
+                <div class="registro">
+                    <h4>26</h4>
+                </div>
+                <div class="registro negativo">
+                    <h4>-3</h4>
+                </div>
+                <div class="registro">
+                    <h4>24</h4>
+                </div>
+                <!-- Fila 15 -->
+                <div class="registro grupo">
+                    <h4>14</h4>
+                    <div>
+                        <img src="../img/escudosequipos/deportivocali.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Deportivo Cali </h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>5</h4>
+                </div>
+                <div class="registro">
+                    <h4>8</h4>
+                </div>
+                <div class="registro">
+                    <h4>7</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>26</h4>
+                </div>
+                <div class="registro negativo">
+                    <h4>-6</h4>
+                </div>
+                <div class="registro">
+                    <h4>23</h4>
+                </div>
+                <!-- Fila 16 -->
+                <div class="registro grupo">
+                    <h4>15</h4>
+                    <div>
+                        <img src="../img/escudosequipos/bucaramanga.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Bucaramanga</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>4</h4>
+                </div>
+                <div class="registro">
+                    <h4>8</h4>
+                </div>
+                <div class="registro">
+                    <h4>7</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>26</h4>
+                </div>
+                <div class="registro negativo">
+                    <h4>-6</h4>
+                </div>
+                <div class="registro">
+                    <h4>23</h4>
+                </div>
+                <!-- Fila 17 -->
+                <div class="registro grupo">
+                    <h4>16</h4>
+                    <div>
+                        <img src="../img/escudosequipos/envigado.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Envigado</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>4</h4>
+                </div>
+                <div class="registro">
+                    <h4>8</h4>
+                </div>
+                <div class="registro">
+                    <h4>8</h4>
+                </div>
+                <div class="registro">
+                    <h4>14</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro negativo">
+                    <h4>-6</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                   <!-- Fila 18 -->
+                <div class="registro grupo">
+                    <h4>17</h4>
+                    <div>
+                        <img src="../img/escudosequipos/oncecaldas.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Once Caldas</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>4</h4>
+                </div>
+                <div class="registro">
+                    <h4>8</h4>
+                </div>
+                <div class="registro">
+                    <h4>8</h4>
+                </div>
+                <div class="registro">
+                    <h4>17</h4>
+                </div>
+                <div class="registro">
+                    <h4>24</h4>
+                </div>
+                <div class="registro negativo">
+                    <h4>-7</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <!-- Fila 19 -->
+                <div class="registro grupo">
+                    <h4>18</h4>
+                    <div>
+                        <img src="../img/escudosequipos/jaguarescordoba.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Jaguares de Córdoba</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>4</h4>
+                </div>
+                <div class="registro">
+                    <h4>7</h4>
+                </div>
+                <div class="registro">
+                    <h4>9</h4>
+                </div>
+                <div class="registro">
+                    <h4>16</h4>
+                </div>
+                <div class="registro">
+                    <h4>26</h4>
+                </div>
+                <div class="registro negativo">
+                    <h4>-10</h4>
+                </div>
+                <div class="registro">
+                    <h4>19</h4>
+                </div>
+                <!-- Fila 20 -->
+                <div class="registro grupo">
+                    <h4>19</h4>
+                    <div>
+                        <img src="../img/escudosequipos/unionmagdalena.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Unión Magdalena</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>3</h4>
+                </div>
+                <div class="registro">
+                    <h4>10</h4>
+                </div>
+                <div class="registro">
+                    <h4>7</h4>
+                </div>
+                <div class="registro">
+                    <h4>16</h4>
+                </div>
+                <div class="registro">
+                    <h4>30</h4>
+                </div>
+                <div class="registro negativo">
+                    <h4>-14</h4>
+                </div>
+                <div class="registro">
+                    <h4>19</h4>
+                </div>
+                <!-- Fila 21 -->
+                <div class="registro grupo">
+                    <h4>20</h4>
+                    <div>
+                        <img src="../img/escudosequipos/atleticohuila.png" width="30px" height="30px" alt="">
+                    </div>
+                    <h4>Atlético Huila</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>5</h4>
+                </div>
+                <div class="registro">
+                    <h4>3</h4>
+                </div>
+                <div class="registro">
+                    <h4>12</h4>
+                </div>
+                <div class="registro">
+                    <h4>20</h4>
+                </div>
+                <div class="registro">
+                    <h4>35</h4>
+                </div>
+                <div class="registro negativo">
+                    <h4>-15</h4>
+                </div>
+                <div class="registro">
+                    <h4>18</h4>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <div class="noticias">
+           
+            <img src="../img/Anuncios/paletas.gif" alt="">
+            <h3>Noticias- Liga Águila</h3>
+         <div class="listanoti">
+                <div>
+                    <img src="../img/noticias/noti/notis1.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <p> <a href=""> <b>Millonarios vs. Nacional, la final de las 32 estrellas
+                        que esperaba el fútbol colombiano</b></a> <br>
+                        El título del FPC entre verdolagas y embajadores 
+                        empezará a definirse este miércoles 21 de junio en el estadio Atanasio Girardot.
+                        <br>
+                        6h</p>
+                </div>
+         </div>
+
+         <div class="listanoti">
+                <div>
+                    <img src="../img/noticias/noti/notis2.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <p> <a href=""> <b>Fernando Jaramillo afirma que "no hay favorecimientos para ningún equipo" con las fechas de la final</b></a> <br>
+                        El presidente de Dimayor habló sobre las fechas para jugar la final.
+                        <br>
+                        1d</p>
+                </div>
+         </div>   
+         <div class="listanoti">
+                <div>
+                    <img src="../img/noticias/noti/notis3.png" alt="">
+                </div>
+                <div class="texto">
+                    <p> <a href=""> <b>Nacional o Millonarios: ¿quién pierde más con la ausencia de los convocados?</b></a> <br>     
+                        Gamero y Autuori deberán plantear la primera final sin nombres importantes.
+                        <br>1d
+                    </p>
+                </div>
+         </div>   
+            <div class="listanoti">
+                <div>
+                    <img src="../img/noticias/noti/notis4.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <p> <a href=""> <b>Millonarios se sobrepuso a las adversidades y se metió en la final del FPC</b></a> <br>     
+                        El Embajador trabajó y terminó logrando el primer puesto en el Grupo B.
+                        <br>1d
+                    </p>
+                </div>
+            </div> 
+    </div>
+</div> 
+ 
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="index.html">
+                        <img src="../img/logo.png"alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Somos un grupo de aficionados al deporte y mas alla de esto, estar seguros de quiemnes son los Ganadores
+                    y gracias a la estadistica.</p>
+                <p>Ofrecemos un servicio personalizado, profesional y confiable.</p>
+                <p>Realizado por: <br> Diego Stiven Aguilar Gonzalez <br> Omar Ferney Junco Guerrero</p>
+				<p>ADSI - Analisis y Desarrollo de Sistemas de Informacion.</p>
+				<p>Servicio Nacional de Aprendizaje - SENA.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>LivesPort</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+</body>
+</html>

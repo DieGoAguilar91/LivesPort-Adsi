@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LivesPort</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="futbolcss/calendario.css">
+    <link rel="icon" href="../img/ico.ico">
+    <!--Iconos-->
+	<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <section class="title">
+        <img src="../img/logo.png" width="140px" height="140px" alt="">
+		<h1><b>LivesPort.com</b> </h1>
+	</section>
+    <div class="menuone">
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='#'>Favoritos</a></li>
+                <li><a href='#'>Top Scores</a></li>
+
+                <li><a class='dropdown-arrow' href='./../index.html'> Futbol</a>
+                    <ul class='sub-menus'>
+                        <li><a href='resultados.html'>Resultados</a></li>
+                        <li><a href='calendario.html'>Calendario</a></li>
+                        <li><a href='equipos.html'>Equipos</a></li>
+                        <li><a href='posicion.html'>Posiciones</a></li>
+                        <li><a href='#'>Todos los torneos</a></li>
+                        <li><a href='#'>ESPNFantasy Fútbol</a></li>
+                    </ul>
+                </li>
+
+                <li><a class='dropdown-arrow' href='#'>Ciclismo</a>
+                <ul class='sub-menus'>
+                    <li><a href='#'>Calendario WorldTour 2023</a></li>
+                    <li><a href='#'>Giro de Italia 2023</a></li>
+                    <li><a href='#'>Etapas</a></li>
+                    <li><a href='#'>Participantes</a></li>
+                    <li><a href='#'>Clasificaciones</a></li>
+                </ul>
+
+                <li><a class='dropdown-arrow' href='#'>F1</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>F-1: Posiciones</a></li>
+                        <li><a href='#'>F1: Calendario</a></li>
+                        <li><a href='#'>F-1: Pilotos</a></li>
+                    </ul>
+                </li>
+
+                <li><a class='dropdown-arrow' href='#'>Basquetbol</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>Resultados</a></li>
+                        <li><a href='#'>Calendario</a></li>
+                        <li><a href='#'>Posiciones</a></li>
+                        <li><a href='#'>Estadisticas</a></li>
+                        <li><a href='#'>Equipos</a></li>
+                        <li><a href='#'>Power Index</a></li>
+                        <li><a href='#'>Jugadores</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow' href='#'>Golf</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>Resultados</a></li>
+                        <li><a href='#'>Calendario</a></li>
+                        <li><a href='#'>Rankings</a></li>
+                        <li><a href='#'>Estadisticas</a></li>
+                        <li><a href='#'>Posiciones</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow' href='#'>Tenis</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>Resultados</a></li>
+                        <li><a href='#'>Calendario</a></li>
+                        <li><a href='#'>Rankings</a></li>
+                        <li><a href='#'>Estadisticas</a></li>
+                        <li><a href='#'>Jugadores</a></li>
+                        <li><a href='#'> Ganadores de Grand Slam</a></li>
+                    </ul>
+                </li>  
+                <li><a class='dropdown-arrow' href='#'>Mas Deportes</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>F. Americano</a></li>
+                        <li><a href='#'>Boxeo</a></li>
+                        <li><a href='#'>MMA</a></li>
+                        <li><a href='#'>Hokey</a></li>
+                        <li><a href='#'>Polo</a></li>
+                        <li><a href='#'>Deporte Motor</a></li>
+                    </ul>
+                </li>   
+            </ul>
+        </nav>
+    </div>
+
+    <div class="menutwo">
+        <nav id='menu'>
+            <ul>
+                <li><a href='../index.html'><img src="../img/iconmenu/futbol.png" width="20x"  height="20px" alt=""> Futbol</a></li>
+                <li><a class='dropdown-arrow' href='#'>Ligas</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>Liga BetPlay</a></li>
+                        <li><a href='#'>Colombia Primera A</a></li>
+                        <li><a href='#'>CONMEBOL Sudamericana</a></li>
+                        <li><a href='#'>UEFA Eoropa League</a></li>
+                        <li><a href='#'>UEFA Champions League</a></li>
+                        <li><a href='#'>Copa America</a></li>
+                    </ul>
+                </li>  
+                <li><a href='resultados.html'>Resultados</a></li>
+                <li><a href='calendario.html'>Calendario</a></li>
+                <li><a href='equipos.html'>Equipos</a></li>
+                <li><a href='posicion.html'>Posiciones</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="container">
+        <div class="titulo">
+            <div>
+                <h1>Calendario de Futbol</h1>
+                <select>
+                    <option value="">Seleciona una liga</option>
+                    <option value="">Liga BetPlay</option>
+                    <option value="">Colombia Primera A</option>
+                    <option value="">CONMEBOL Sudamericana</option>
+                    <option value="">UEFA Eoropa League</option>
+                    <option value="">UEFA Champions League</option>
+                    <option value="">Copa America</option>
+                </select>
+            </div>  
+        </div>
+        
+        <div class="trcalendar">
+            <div>
+                <h1> < </h1>
+            </div>
+            <h3><b>MAR</b><br>13jun</h3>
+            <h3><b>MIÉ</b><br>14jun</h3>          
+            <h3><b>JUE</b><br>15jun</h3>
+            <h3><b>VIE</b><br>16jun</h3>
+            <h3><b>SAB</b><br>17jun</h3>
+            <h3><b>DOM</b><br>18jun</h3>
+            <h3><b>LUN</b><br>19jun</h3>
+            <div>
+                <h1> > </h1>
+            </div>
+           
+            <img src="../img/iconos/calendario.png" width="30" height="30px">
+           
+        </div>
+        <div class="titulo">
+            <h1>Amistosos Internacionales</h1>
+        </div>  
+        <div class="tablapartidos">
+            <div class="registro">
+                <h3>PARTIDO</h3>
+            </div>
+            <div class="registro">
+                <h3>HORA</h3>
+            </div>
+            <div class="registro">
+            <h3>TV</h3>
+            </div>
+            <div class="registro">
+                <h3>LOCATION</h3>
+            </div>
+            <div class="registro">
+                <h3>APUESTAS</h3>
+            </div>
+            <div class="registro  vs ">
+                <h4>Suecia Vs New Zeland</h4>
+            </div>
+            <div class="registro horavivo ">
+                <h4>°EN VIVO</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>Friends Arena,Estocolmo,Suecia</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co/">Apuesta ahora con Rushbet <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Serbia Vs Jordania</h4>
+            </div>
+            <div class="registro hora ">
+                <h4>01:30 PM</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>Generali_arena,Wiener Neustadt,Austria</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co/">SRB: -275<img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> JOR: +600<img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Polonia Vs Alemania</h4>
+            </div>
+            <div class="registro hora ">
+                <h4>01:45 PM</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>PGE Narodowy,Warsaw, Polonia</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co/">POL: +375<img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> GER: -177<img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Colombia Vs Irak</h4>
+            </div>
+            <div class="registro hora ">
+                <h4>02:00 PM</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>Mestella,Valencia,España</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co/">COL: -360<img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> IRQ: +800<img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Chile Vs República Dominicana</h4>
+            </div>
+            <div class="registro hora ">
+                <h4>07:30 PM</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>Estadio Sausalito, Vina del mar, Chile</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co/">Apuesta ahora con Rushbet  <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+        </div>
+        <br>
+        <div class="tablapartidosresultados">
+            <div class="registro">
+                <h3>PARTIDO</h3>
+            </div>
+            <div class="registro">
+                <h3>RESULTADO</h3>
+            </div>
+            <div class="registro">
+                <h3>LOCATION</h3>
+            </div>
+            <div class="registro">
+                <h3>ASIS</h3>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>China   4-0   Myanmar</h4>
+            </div>
+            <div class="registro ">
+                <h4>F</h4>
+            </div>
+            <div class="registro location ">
+                <h4>Dalian Suoyuwan Football Stadium, Dalian, China PR</h4>
+            </div>
+            <div class="registro">
+                <h4>27,651</h4>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>China Taipeí   2-2   Tailandia</h4>
+            </div>
+            <div class="registro ">
+                <h4>F</h4>
+            </div>
+            <div class="registro location ">
+                <h4>Kaohsiung National Stadium, Kaohsiung, Chinese Taipei</h4>
+            </div>
+            <div class="registro">
+                <h4>6,762</h4>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Corea del sur   0-1   peru</h4>
+            </div>
+            <div class="registro ">
+                <h4>F</h4>
+            </div>
+            <div class="registro location ">
+                <h4>Busan Asiad MAin Stadium, Busan, Korea Republic</h4>
+            </div>
+            <div class="registro">
+                <h4>5,443</h4>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Singapore  2-2   Papúa Nueva Guinea</h4>
+            </div>
+            <div class="registro ">
+                <h4>F</h4>
+            </div>
+            <div class="registro location ">
+                <h4></h4>
+            </div>
+            <div class="registro">
+                <h4>N/A</h4>
+            </div>
+        </div>
+     
+        <div class="titulo">
+            <h1>Torneo Maurice Revello</h1>
+        </div>
+
+        <div class="tablapartidosresultados">
+            <div class="registro">
+                <h3>PARTIDO</h3>
+            </div>
+            <div class="registro">
+                <h3>RESULTADO</h3>
+            </div>
+            <div class="registro">
+                <h3>LOCATION</h3>
+            </div>
+            <div class="registro">
+                <h3>ASIS</h3>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Austria U23  1-2   Panama U23</h4>
+            </div>
+            <div class="registro ">
+                <h4>F</h4>
+            </div>
+            <div class="registro location ">
+                <h4>Stade d "Honneur Roustan, Salon de Provence, Francia</h4>
+            </div>
+            <div class="registro">
+                <h4>250</h4>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>France U21  1-2   Mexico U23</h4>
+            </div>
+            <div class="registro ">
+                <h4>MF - Pens</h4>
+            </div>
+            <div class="registro location ">
+                <h4>Stade d "Honneur Roustan, Salon de Provence, Francia</h4>
+            </div>
+            <div class="registro">
+                <h4>1,000</h4>
+            </div> 
+        </div>
+
+        <div class="titulo">
+            <h1>Eliminatorias Eurocopa</h1>
+        </div>
+        <div class="tablapartidos">
+            <div class="registro">
+                <h3>PARTIDO</h3>
+            </div>
+            <div class="registro">
+                <h3>HORA</h3>
+            </div>
+            <div class="registro">
+            <h3>TV</h3>
+            </div>
+            <div class="registro">
+                <h3>LOCATION</h3>
+            </div>
+            <div class="registro">
+                <h3>APUESTAS</h3>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Andorra Vs New Suiza</h4>
+            </div>
+            <div class="registro horavivo ">
+                <h4>°EN VIVO</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>Estadi Nacional d"Andorra,Andorra la Vieja, Andorra</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co/">Apuesta ahora con Rushbet  <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Belarus Vs Israel</h4>
+            </div>
+            <div class="registro horavivo ">
+                <h4>°EN VIVO</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>Ferenc Szusza Stadium, Budapest, Hungria</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co/">Apuesta ahora con Rushbet  <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Dinamarca Vs Northern Ireland</h4>
+            </div>
+            <div class="registro horavivo ">
+                <h4>°EN VIVO</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>Telia PArken, Copenhagen, Dinamarca</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co/">Apuesta ahora con Rushbet  <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Gibraltar Vs Francia</h4>
+            </div>
+            <div class="registro horavivo ">
+                <h4>°EN VIVO</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>Estadio Algarve, FAro, Portugal</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co/">Apuesta ahora con Rushbet  <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Grecia Vs Irlanda</h4>
+            </div>
+            <div class="registro horavivo ">
+                <h4>°EN VIVO</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>OPAP Arena, Atenas, Grecia</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co/">Apuesta ahora con Rushbet  <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Kosovo Vs Rumania</h4>
+            </div>
+            <div class="registro horavivo ">
+                <h4>°EN VIVO</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>Stadimumi Fadil Vokrri, Prishtina, Kósovo</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co/">Apuesta ahora con Rushbet  <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Letonia Vs Turkey</h4>
+            </div>
+            <div class="registro horavivo ">
+                <h4>°EN VIVO</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>Skonto Stadions,Riga,Letonia</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co/">Apuesta ahora con Rushbet  <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>Malta Vs Inglaterra</h4>
+            </div>
+            <div class="registro horavivo ">
+                <h4>°EN VIVO</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>Ta "Qali National Stadium, Attard, Malta</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co">Apuesta ahora con Rushbet  <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+
+            <div class="registro  vs ">
+                <h4>North Macedonia Vs Ukraine</h4>
+            </div>
+            <div class="registro horavivo ">
+                <h4>°EN VIVO</h4>
+            </div>
+            <div class="registro tv ">
+            </div>
+            <div class="registro location ">
+                <h4>Tose Proeski Arena, Skopje, Macedonia del Norte</h4>
+            </div>
+            <div class="registro apuestas">
+                <a href="https://www.rushbet.co">Apuesta ahora con Rushbet  <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="index.html">
+                        <img src="../img/logo.png"alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Somos un grupo de aficionados al deporte y mas alla de esto, estar seguros de quiemnes son los Ganadores
+                    y gracias a la estadistica.</p>
+                <p>Ofrecemos un servicio personalizado, profesional y confiable.</p>
+                <p>Realizado por: <br> Diego Stiven Aguilar Gonzalez <br> Omar Ferney Junco Guerrero</p>
+				<p>ADSI - Analisis y Desarrollo de Sistemas de Informacion.</p>
+				<p>Servicio Nacional de Aprendizaje - SENA.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>LivesPort</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+</body>
+</html>

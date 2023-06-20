@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>LivesPort</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="futbolcss/resultados.css">
+    <link rel="icon" href="../img/ico.ico">
+    <!--Iconos-->
+	<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <section class="title">
+        <img src="../img/logo.png" width="140px" height="140px" alt="">
+		<h1><b>LivesPort.com</b> </h1>
+	</section>
+    <div class="menuone">
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='#'>Favoritos</a></li>
+                <li><a href='#'>Top Scores</a></li>
+
+                <li><a class='dropdown-arrow' href='../index.html'> Futbol</a>
+                    <ul class='sub-menus'>
+                        <li><a href='resultados.html'>Resultados</a></li>
+                        <li><a href='calendario.html'>Calendario</a></li>
+                        <li><a href='equipos.html'>Equipos</a></li>
+                        <li><a href='posicion.html'>Posiciones</a></li>
+                        <li><a href='#'>Todos los torneos</a></li>
+                        <li><a href='#'>ESPNFantasy Fútbol</a></li>
+                    </ul>
+                </li>
+
+                <li><a class='dropdown-arrow' href='#'>Ciclismo</a>
+                <ul class='sub-menus'>
+                    <li><a href='#'>Calendario WorldTour 2023</a></li>
+                    <li><a href='#'>Giro de Italia 2023</a></li>
+                    <li><a href='#'>Etapas</a></li>
+                    <li><a href='#'>Participantes</a></li>
+                    <li><a href='#'>Clasificaciones</a></li>
+                </ul>
+
+                <li><a class='dropdown-arrow' href='#'>F1</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>F-1: Posiciones</a></li>
+                        <li><a href='#'>F1: Calendario</a></li>
+                        <li><a href='#'>F-1: Pilotos</a></li>
+                    </ul>
+                </li>
+
+                <li><a class='dropdown-arrow' href='#'>Basquetbol</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>Resultados</a></li>
+                        <li><a href='#'>Calendario</a></li>
+                        <li><a href='#'>Posiciones</a></li>
+                        <li><a href='#'>Estadisticas</a></li>
+                        <li><a href='#'>Equipos</a></li>
+                        <li><a href='#'>Power Index</a></li>
+                        <li><a href='#'>Jugadores</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow' href='#'>Golf</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>Resultados</a></li>
+                        <li><a href='#'>Calendario</a></li>
+                        <li><a href='#'>Rankings</a></li>
+                        <li><a href='#'>Estadisticas</a></li>
+                        <li><a href='#'>Posiciones</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow' href='#'>Tenis</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>Resultados</a></li>
+                        <li><a href='#'>Calendario</a></li>
+                        <li><a href='#'>Rankings</a></li>
+                        <li><a href='#'>Estadisticas</a></li>
+                        <li><a href='#'>Jugadores</a></li>
+                        <li><a href='#'> Ganadores de Grand Slam</a></li>
+                    </ul>
+                </li>  
+                <li><a class='dropdown-arrow' href='#'>Mas Deportes</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>F. Americano</a></li>
+                        <li><a href='#'>Boxeo</a></li>
+                        <li><a href='#'>MMA</a></li>
+                        <li><a href='#'>Hokey</a></li>
+                        <li><a href='#'>Polo</a></li>
+                        <li><a href='#'>Deporte Motor</a></li>
+                    </ul>
+                </li>   
+            </ul>
+        </nav>
+    </div>
+
+    <div class="menutwo">
+        <nav id='menu'>
+
+                <li><a href='../index.html'><img src="../img/iconmenu/futbol.png" width="20x"  height="20px" alt=""> Futbol</a></li>
+                <li><a class='dropdown-arrow' href='#'>Ligas</a>
+                    <ul class='sub-menus'>
+                        <li><a href='#'>Liga BetPlay</a></li>
+                        <li><a href='#'>Colombia Primera A</a></li>
+                        <li><a href='#'>CONMEBOL Sudamericana</a></li>
+                        <li><a href='#'>UEFA Eoropa League</a></li>
+                        <li><a href='#'>UEFA Champions League</a></li>
+                        <li><a href='#'>Copa America</a></li>
+                    </ul>
+                </li>  
+                <li><a href='resultados.html'>Resultados</a></li>
+                <li><a href='calendario.html'>Calendario</a></li>
+                <li><a href='equipos.html'>Equipos</a></li>
+                <li><a href='posicion.html'>Posiciones</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="boxcontainer">
+            <div class="titulo">
+                <div>
+                    <h1>Resultados de Futbol</h1>
+                    <select>
+                        <option value="">Resultados de Futbol</option>
+                        <option value="">Liga BetPlay</option>
+                        <option value="">Colombia Primera A</option>
+                        <option value="">CONMEBOL Sudamericana</option>
+                        <option value="">UEFA Eoropa League</option>
+                        <option value="">UEFA Champions League</option>
+                        <option value="">Copa America</option>
+                    </select>
+                </div>  
+            </div>
+             
+            <div class="trcalendar">
+                <div>
+                    <h1> < </h1>
+                </div>
+                <h3><b>MAR</b><br>13jun</h3>
+                <h3><b>MIÉ</b><br>14jun</h3>          
+                <h3><b>JUE</b><br>15jun</h3>
+                <h3><b>VIE</b><br>16jun</h3>
+                <h3><b>SAB</b><br>17jun</h3>
+                <h3 class="dia"><b>DOM</b><br>18jun</h3>
+                <h3><b>LUN</b><br>19jun</h3>
+                <div>
+                    <h1> > </h1>
+                </div>
+                <img src="../img/iconos/calendario.png" width="30" height="30px">
+            
+            </div>
+            <h5><b>Resultados del 18 de Junio, 2023</b></h5>
+            <h5>Amistosos internacionales</h5>
+            
+            <div class="resultado">
+                <div >
+                    <div class="partido">
+                     <b><h3>Paraguay</h3> <h1>2</h1> <h5>45°</h5> <h1>0</h1> <h3>Nicaragua</h3> </b> 
+                     <p>M Almirón (62')</p>  
+                    </div>
+                    <div class="apuesta">
+                        <img src="../img/iconos/rushbet.png" height="40px" width="80px" alt="">
+                        <a href="https://www.rushbet.co/">Apuesta ahora con Rushbet <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+                    </div>
+
+                </div>
+                <div class="option">
+                    <div>
+                        <input type="submit" value="EN VIVO">
+                        <br>
+                        <br>
+                        <input type="submit" value="ESTADISTICAS">
+                    </div>
+                   
+                </div>
+            </div>
+            <br>
+            <div class="resultado">
+                <div>
+                    <div class="partido">
+                     <b><h3>Mauritius</h3> <h1>1</h1> <h5>F</h5> <h1>0</h1> <h3>Kenya</h3> </b> 
+                     <p>M K Saramandif (22')</p>  
+                    </div>
+                    <div class="apuesta">
+                    </div>
+
+                </div>
+                <div class="option">
+                    <div>
+                        <input type="submit" value="RESUMEN">
+                        <br>
+                        <br>
+                        <input type="submit" value="ESTADISTICAS">
+                    </div>
+                   
+                </div>
+            </div>
+            <br>
+            <div class="resultado">
+                <div>
+                    <div class="partido">
+                     <b><h3>Singapur</h3> <h1>1</h1> <h5>F</h5> <h1>1</h1> <h3>Islas Salomón</h3> </b> 
+                     <p></p>  
+                    </div>
+                    <div class="apuesta">
+                    </div>
+
+                </div>
+                <div class="option">
+                    <div>
+                        <input type="submit" value="RESUMEN">
+                        <br>
+                        <br>
+                        <input type="submit" value="ESTADISTICAS">
+                    </div>
+                   
+                </div>
+            </div>
+            <br>
+            <div class="resultado">
+                <div>
+                    <div class="partido">
+                     <b><h3>Egipto</h3> <h1>1</h1> <h5>18/6</h5> <h1>0</h1> <h3>Nicaragua</h3> </b> 
+                     <p></p>  
+                    </div>
+                    <div class="apuesta">
+                        <img src="../img/iconos/rushbet.png" height="40px" width="80px" alt="">
+                        <a href="https://www.rushbet.co/">Apuesta ahora con Rushbet <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+                    </div>
+
+                </div>
+                <div class="option">
+                    <div>
+                        <input type="submit" value="RESUMEN">
+                        <br>
+                        <br>
+                        <input type="submit" value="ESTADISTICAS">
+                    </div>
+                   
+                </div>
+            </div>
+            <br>
+            <div class="resultado">
+                <div>
+                    <div class="partido">
+                     <b><h3>Venezuela</h3> <h1>2</h1> <h5>18/6 </h5> <h1>0</h1> <h3>Guatemala</h3> </b> 
+                     <p></p>  
+                    </div>
+                    <div class="apuesta">
+                        <img src="../img/iconos/rushbet.png" height="40px" width="80px" alt="">
+                        <a href="https://www.rushbet.co/">Apuesta ahora con Rushbet <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+                    </div>
+
+                </div>
+                <div class="option">
+                    <div>
+                        <input type="submit" value="RESUMEN">
+                        <br>
+                        <br>
+                        <input type="submit" value="ESTADISTICAS">
+                    </div>
+                   
+                </div>
+            </div>
+            <br>
+            <div class="resultado">
+                <div>
+                    <div class="partido">
+                     <b><h3>Honduras</h3> <h1>2</h1> <h5>18/6</h5> <h1>0</h1> <h3>Barbados</h3> </b> 
+                     <p></p>  
+                    </div>
+                    <div class="apuesta">
+                        <img src="../img/iconos/rushbet.png" height="40px" width="80px" alt="">
+                        <a href="https://www.rushbet.co/">Apuesta ahora con Rushbet <img src="../img/iconos/opennew.png" width="20px" height="20px" alt=""> </a>
+                    </div>
+
+                </div>
+                <div class="option">
+                    <div>
+                        <input type="submit" value="RESUMEN">
+                        <br>
+                        <br>
+                        <input type="submit" value="ESTADISTICAS">
+                    </div>
+                   
+                </div>
+            </div>
+            <br>
+            
+            
+        </div>
+        
+
+        <div class="noticias">
+            <div>
+                <h1>Las Mejores Noticias </h1>
+            </div>
+            <div class="container-carousel">
+                <div class="carruseles" id="slider">
+                    <section class="slider-section">
+                        <a href="">
+                            <img src="../img/transicionimg/futbol1.jpeg">
+                            <div class="capa">
+                                <h1>Ni la pandemia detiene el mercado de fichajes en el fútbol</h1>
+                           </div>
+                        </a>
+                     
+                    </section>
+    
+                    <section class="slider-section">
+                        <a href="">
+                            <img src="../img/transicionimg/futbol2.jpeg">
+                        </a>
+                        <div class="capa">
+                            <h1>Macron dispuesto a intervenir: Mbappé, ¿un asunto de Estado?</h1>
+                        </div>
+                    </section>
+                    <section class="slider-section">
+                        <a href="">
+                            <img src="../img/transicionimg/futbol3.jpg">
+                        </a>
+                        <div class="capa">
+                            <h1>Leo Messi: “En principio no iré al próximo Mundial”</h1>
+                        </div>
+                    </section>
+                    <section class="slider-section">
+                        <a href="">
+                            <img src="../img/transicionimg/futbol4.jpg">
+                        </a>
+                        <div class="capa">
+                            <h1>Uruguay vence a Italia y celebra como campeón mundial sub-20 por primera vez</h1>
+                        </div>
+                    </section>
+                    <section class="slider-section">
+                        <a href="">
+                            <img src="../img/transicionimg/futbol5.jpg">
+                        </a>
+                        <div class="capa">
+                            <h1>Manchester City gana su primera Champions </h1>
+                        </div>
+                    </section>
+                    <section class="slider-section">
+                        <a href="">
+                            <img src="../img/transicionimg/futbol6.jpg">
+                        </a>
+                        <div class="capa">
+                            <h1>Messi, Miami y los hermanos cubanoamericanos</h1>
+                        </div>
+                    </section>
+                    <section class="slider-section">
+                        <a href="">
+                            <img src="../img/transicionimg/fubol7.jpg">
+                        </a>
+                        <div class="capa">
+                            <h1>Messi confirma que irá al Inter Miami, no al Barça </h1>
+                        </div>
+                    </section>
+                    <section class="slider-section">
+                        <a href="">
+                            <img src="../img/transicionimg/futbol8.jpg">
+                        </a>
+                        <div class="capa">
+                            <h1>Benzema firma con el Al Ittihad saudí hasta 2026</h1>
+                        </div>
+                    </section>
+                    <section class="slider-section">
+                        <a href="">
+                            <img src="../img/transicionimg/futbol9.jpg">
+                        </a>
+                        <div class="capa">
+                            <h1>Cuadrado resolverá su futuro después de sus compromisos con la selección</h1>
+                        </div>
+                    </section>
+                    <section class="slider-section">
+                        <a href="">
+                            <img src="../img/transicionimg/futbol10.jpg">
+                        </a>
+                        <div class="capa">
+                            <h1>Messi fue detenido por la policía migratoria de China por problemas con su pasaporte</h1>
+                        </div>
+                    </section>
+                </div>
+                <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+                <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+            </div>
+        
+            <script src="futbol_js/resultado.js"></script>
+
+            <div>
+                <h1>Los Mejores Videos </h1>
+            </div>
+            <div class="video">
+                <img src="../img/noticias/video.gif" alt="">
+            </div>
+            <div class="content">
+                <img src="../img/iconos/video.png" alt="">
+                <p>
+                   <b> Messi comienza una nueva temporada en PSG: sus goles en el 1° año en la Ligue 1 </b><br>
+                    4:30
+                </p>
+                <img src="../img/iconos/video.png" alt="">
+                <p>
+                   <b> ¿Falta alguno? Los mejores 5 goles de Messi al Real Madrid en La Liga </b><br>
+                    3:26 Spanish Primera División
+                </p>
+           </div>
+
+        </div>
+       
+        
+    </div>
+        
+   
+
+ 
+
+    
+
+
+
+
+
+
+
+
+    
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="index.html">
+                        <img src="../img/logo.png"alt="">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Somos un grupo de aficionados al deporte y mas alla de esto, estar seguros de quiemnes son los Ganadores
+                    y gracias a la estadistica.</p>
+                <p>Ofrecemos un servicio personalizado, profesional y confiable.</p>
+                <p>Realizado por: <br> Diego Stiven Aguilar Gonzalez <br> Omar Ferney Junco Guerrero</p>
+				<p>ADSI - Analisis y Desarrollo de Sistemas de Informacion.</p>
+				<p>Servicio Nacional de Aprendizaje - SENA.</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>LivesPort</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+</body>
+</html>

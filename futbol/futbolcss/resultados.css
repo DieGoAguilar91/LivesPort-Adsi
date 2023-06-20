@@ -1,0 +1,246 @@
+
+.container{
+    padding:10PX ;
+    justify-content: center;
+    box-sizing: 0;
+    background-color: #d5e0d1;
+    height: 1330px;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Titulo */
+.boxcontainer{
+    width:620px;
+}
+
+.titulo div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px ;
+}
+
+.titulo div select{
+   height: 30px;
+   font-size: medium;
+   border-radius: 10px;
+ background: transparent;
+}
+
+.trcalendar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    font-size: 12px;
+    align-items: center;
+}
+.trcalendar h3{
+    width: 10px;
+    height: 20px;
+    gap: 20px;
+}
+.trcalendar .dia{
+color: red;
+}
+
+.resultado{
+    display: grid;
+    grid-template-columns: 75% auto;
+   padding: 5px;
+   background-color: rgb(252, 250, 250);
+   border: 1px solid  rgb(150, 149, 149);
+   border-radius: 20px;
+}
+.partido{
+    padding-right: 10px;
+}
+.partido b{
+    justify-content: space-between;
+    display: flex;
+    font-size: 20px;
+    height: 80px;
+}
+.partido p {
+text-align: center;
+height: 10px;
+}
+
+.apuesta{
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+.option{
+    border-left: 1px solid rgb(71, 71, 71);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.option input{
+    font-size: 12px;
+    width: 100px;
+    height: 25px;
+    border: 1px solid #1f53c5;
+    border-radius: 20px;
+    color: #1f53c5;
+    text-shadow:  0px -0px 0px rgb(16, 5, 117);
+}
+
+.noticias{
+    padding: 10px 10px 0px 10px;
+  background-color:rgb(252, 250, 250);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 1px solid  rgb(150, 149, 149)
+}
+.video img{
+    border-radius: 20px;
+}
+.noticias .content{
+    width: 480px;
+    display: grid;
+    grid-template-columns: 15% 80%;
+    justify-content: center;
+    align-items: center;
+
+}
+/* Transicion de img */
+.capa {
+    position:absolute;
+    top: 190px;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 0.5, 0.5, 0.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color:#ffffff;
+    text-shadow:  1px -3px 2px rgb(117, 87, 5);
+    font-size: 15px;  
+}
+
+
+.container-carousel {
+    position: relative;
+    width: 480px;
+    height: 280px;
+    background-color: #e0e0e0;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carruseles {
+    width: 1000%;
+    height: 100%;
+    display: flex;
+    position:relative;
+}
+
+.slider-section {
+    position:relative;
+    width: calc(100% / 10);
+    height: 100%;
+}
+
+.slider-section  img {
+ position:relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+@media (max-width:1190px){
+    
+    .container{
+        height: 2200px;  
+    }
+    .noticias{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        grid-template-columns: 20% auto ;
+        gap: 10px;
+     
+    }
+  
+}
+@media (max-width:660px){
+    
+    .container{
+        height: 2200px;  
+    }
+    .noticias{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        width: 90%;
+        display: grid;
+        grid-template-columns:auto ;
+        gap: 10px;
+     
+    }
+    .content img{
+        width: 40px;
+    }
+    .noticias .content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 15% 80%;
+        justify-content: center;
+        align-items: center;
+    
+    }
+  .noticias .video img{
+    width: 380px;
+    height: 180px;
+  }
+    .container-carousel {
+     
+        width: 380px;
+        height: 180px;
+       
+    }
+    .capa {
+     
+        top: 90px;
+    }
+}

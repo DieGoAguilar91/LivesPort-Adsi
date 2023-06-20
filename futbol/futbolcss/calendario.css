@@ -1,0 +1,101 @@
+.container{
+    box-sizing: 0;
+    background-color: #d5e0d1;
+    height: 1450px;
+   padding-left: 50px;
+   padding-right: 50px;
+   align-items: center;
+}
+.titulo div{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px ;
+}
+
+.titulo div select{
+   height: 30px;
+   font-size: medium;
+   border-radius: 10px;
+ background: transparent;
+}
+.trcalendar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+   
+    font-size: 12px;
+    align-items: center;
+}
+.trcalendar h3{
+    width: 10px;
+    height: 20px;
+    gap: 20px;
+}
+/* Tabla de partidos proximos */
+.tablapartidos{
+    border: 2px solid #000000;
+    display:grid;
+    text-align: center;
+    grid-template-columns: auto auto auto auto auto ;
+}
+.tablapartidos .registro{
+border-bottom: 1px solid;
+height: 40px;
+
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+align-content: center;
+}
+.horavivo h4{
+    color: rgb(201, 10, 10);
+}
+.vs h4{
+    color: rgb(43, 43, 133);
+}
+.tablapartidos .apuestas a {
+    display: flex;
+    gap: 5px;
+   align-content: center;
+}
+.tablapartidos .apuestas {
+    display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+}
+/* Tabla de partidos finalizados */
+.tablapartidosresultados{
+    border: 1px solid #000000;
+    display:grid;
+    text-align: center;
+    grid-template-columns: auto auto auto auto  ;
+}
+.tablapartidosresultados .registro{
+    border-bottom: 1px solid;
+    height: 40px;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (max-width:830px){
+    .tablapartidos .registro{
+        height: 60px;
+        display: flex;
+      
+    }
+    .container{
+        height: 2000px;
+    }
+    .tablapartidosresultados .registro{
+        height: 60px;    
+    }
+}
